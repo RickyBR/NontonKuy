@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="bg_page">#211C1C</color>
     <color name="bg_btn">#3C3B3B</color>
+    <color name="et_color">#EDEDED</color>
 </resources>
