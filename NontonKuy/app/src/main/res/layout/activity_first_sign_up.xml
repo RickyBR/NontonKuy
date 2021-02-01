@@ -54,6 +54,7 @@
                 android:layout_marginTop="8dp"
                 android:background="@drawable/bg_editview"
                 android:fontFamily="@font/mmedium"
+                android:hint="Username"
                 android:lines="1" />
         </LinearLayout>
 
@@ -77,6 +78,7 @@
                 android:layout_height="41dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/bg_editview"
+                android:hint="Email"
                 android:fontFamily="@font/mmedium"
                 android:lines="1" />
         </LinearLayout>
@@ -102,6 +104,7 @@
                 android:layout_marginTop="8dp"
                 android:background="@drawable/bg_editview"
                 android:fontFamily="@font/mmedium"
+                android:hint="Password"
                 android:lines="1" />
         </LinearLayout>
 
@@ -137,7 +140,7 @@
     <androidx.appcompat.widget.AppCompatButton
         android:layout_width="230dp"
         android:layout_height="40dp"
-        android:layout_marginTop="26dp"
+        android:layout_marginTop="32dp"
         android:background="@drawable/bg_btn_primary"
         android:text="Continue"
         android:fontFamily="@font/mregular"
