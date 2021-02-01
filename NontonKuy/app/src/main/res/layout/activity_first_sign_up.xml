@@ -103,6 +103,7 @@
                 android:layout_height="41dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/bg_editview"
+                android:inputType="textPassword"
                 android:fontFamily="@font/mmedium"
                 android:hint="Password"
                 android:lines="1" />
