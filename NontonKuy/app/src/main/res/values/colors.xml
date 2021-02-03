@@ -10,4 +10,5 @@
     <color name="bg_page">#211C1C</color>
     <color name="bg_btn">#3C3B3B</color>
     <color name="et_color">#EDEDED</color>
+    <color name="header_color">#564D4D</color>
 </resources>
