@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FirstSignUpActivity"
+    tools:context=".SignInActivity"
     android:background="@color/bg_page">
 
     <ImageView
@@ -26,7 +26,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="58dp"
+        android:layout_marginTop="150dp"
         android:layout_marginEnd="60dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
@@ -78,41 +78,16 @@
                 android:layout_height="41dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/bg_editview"
+                android:fontFamily="@font/mmedium"
                 android:hint="Email"
-                android:fontFamily="@font/mmedium"
                 android:lines="1" />
         </LinearLayout>
+
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
-                android:fontFamily="@font/mregular"
-                android:text="Password"
-                android:textColor="@color/white"
-                android:textSize="16dp" />
-
-            <EditText
-                android:layout_width="230dp"
-                android:layout_height="41dp"
-                android:layout_marginTop="8dp"
-                android:background="@drawable/bg_editview"
-                android:inputType="textPassword"
-                android:fontFamily="@font/mmedium"
-                android:hint="Password"
-                android:lines="1" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
+            android:layout_marginStart="8dp"
             android:orientation="horizontal">
 
             <TextView
@@ -120,9 +95,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:fontFamily="@font/montserratlight"
-                android:text="Have an account?"
+                android:text="don't have an account?"
                 android:textColor="@color/white"
-                android:textSize="16dp" />
+                android:textSize="14dp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -132,24 +107,27 @@
                 android:fontFamily="@font/mmedium"
                 android:text="Sign In"
                 android:textColor="@color/white"
-                android:textSize="16dp" />
+                android:textSize="14dp" />
         </LinearLayout>
 
 
     </LinearLayout>
 
+
+
+
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_continue"
         android:layout_width="230dp"
         android:layout_height="40dp"
         android:layout_marginTop="32dp"
         android:background="@drawable/bg_btn_primary"
-        android:text="Continue"
+        android:text="Sign In"
         android:fontFamily="@font/mregular"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

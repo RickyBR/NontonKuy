@@ -1,0 +1,23 @@
+[33mcommit e24053bb701b8446d66d3bd3fd71e95486261c92[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: RickyBR <berlandoricky@gmail.com>
+Date:   Mon Feb 1 22:59:35 2021 +0700
+
+    fix layout and put intent with delayed in SplashSceenActivity
+
+[33mcommit 30d6d34a0ee1085b7bfe27a93d1b454db8ee04c4[m
+Author: RickyBR <berlandoricky@gmail.com>
+Date:   Mon Feb 1 22:57:50 2021 +0700
+
+    add intent in splashscreen with delayed 2000ms and fix layout
+
+[33mcommit c1ba74952cb95fb0630d227ce463c92234df1e50[m
+Author: RickyBR <berlandoricky@gmail.com>
+Date:   Mon Feb 1 22:27:10 2021 +0700
+
+    add to github
+
+[33mcommit a8f9661428a6b64390817c9a4fa5aa0576818879[m
+Author: Ricky Berlando <59849326+RickyBR@users.noreply.github.com>
+Date:   Mon Feb 1 20:16:55 2021 +0700
+
+    Initial commit

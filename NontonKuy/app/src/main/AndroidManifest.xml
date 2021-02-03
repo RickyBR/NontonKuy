@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.NontonKuy">
-        <activity android:name=".FirstSignUpActivity"></activity>
+        <activity android:name=".SignInActivity"></activity>
+        <activity android:name=".SecondSignUpAcitivity" />
+        <activity android:name=".FirstSignUpActivity" />
         <activity android:name=".GetStartedActivity" />
         <activity android:name=".SplashSceenActivity">
             <intent-filter>

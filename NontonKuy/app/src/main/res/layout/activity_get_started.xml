@@ -21,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button"
+        android:id="@+id/btn_Signin"
         android:layout_width="238dp"
         android:layout_height="50dp"
         android:layout_marginStart="75dp"
@@ -46,7 +46,7 @@
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_Signin" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
