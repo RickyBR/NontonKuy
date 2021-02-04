@@ -148,11 +148,12 @@
 
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_gohome"
         android:layout_width="230dp"
         android:layout_height="40dp"
         android:layout_marginTop="32dp"
         android:background="@drawable/bg_btn_primary"
-        android:text="Continue"
+        android:text="Sign UP"
         android:fontFamily="@font/mregular"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
@@ -163,7 +164,7 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginTop="96dp"
-        android:layout_marginEnd="150dp"
+        android:layout_marginEnd="130dp"
         android:background="@drawable/bg_btn_plus"
         android:fontFamily="@font/mmedium"
         android:text="+"
