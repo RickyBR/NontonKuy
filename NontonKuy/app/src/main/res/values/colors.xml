@@ -11,4 +11,5 @@
     <color name="bg_btn">#3C3B3B</color>
     <color name="et_color">#EDEDED</color>
     <color name="header_color">#564D4D</color>
+    <color name="gray_primary">#D3B7B7</color>
 </resources>
