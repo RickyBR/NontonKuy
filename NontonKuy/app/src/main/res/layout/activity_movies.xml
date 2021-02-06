@@ -101,6 +101,7 @@
                         android:textSize="14sp" />
 
                     <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_buy_joker"
                         android:layout_width="155dp"
                         android:layout_height="30dp"
                         android:layout_marginTop="8dp"
