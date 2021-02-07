@@ -128,7 +128,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
 
             <TextView
-                android:id="@+id/textView6"
+                android:id="@+id/seeallnews"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
@@ -300,6 +300,21 @@
                 android:textSize="16dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/movieall_scrollbar" />
+
+            <TextView
+                 android:id="@+id/SeeNews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/montserratlight"
+                android:text="See All"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/movieall_scrollbar" />
+
 
             <LinearLayout
                 android:id="@+id/linearLayout3"
