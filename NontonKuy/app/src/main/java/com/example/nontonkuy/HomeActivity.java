@@ -9,13 +9,15 @@ import android.widget.ImageView;
 
 public class HomeActivity extends AppCompatActivity {
 
-    ImageView movies_navbar;
+    ImageView movies_navbar,akun_navbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         movies_navbar = findViewById(R.id.movies_navbar);
+        akun_navbar = findViewById(R.id.akun_navbar);
+
 
         movies_navbar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -24,5 +26,12 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(goMoviesPage);
             }
         });
+        akun_navbar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent goAkunPage = new Intent(HomeActivity.this, MyProfileActivity.class);
+                startActivity(goAkunPage);
+            }
+        });
     }
-}
+    }

@@ -43,7 +43,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
                 android:fontFamily="@font/mregular"
-                android:text="Username"
+                android:text="Name"
                 android:textColor="@color/white"
                 android:textSize="16dp" />
 
@@ -53,7 +53,7 @@
                 android:layout_marginTop="8dp"
                 android:background="@drawable/bg_editview"
                 android:fontFamily="@font/mmedium"
-                android:hint="Username"
+
                 android:lines="1" />
         </LinearLayout>
 
@@ -68,7 +68,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
                 android:fontFamily="@font/mregular"
-                android:text="Email"
+                android:text="Bio"
                 android:textColor="@color/white"
                 android:textSize="16dp" />
 
@@ -78,9 +78,10 @@
                 android:layout_marginTop="8dp"
                 android:background="@drawable/bg_editview"
                 android:fontFamily="@font/mmedium"
-                android:hint="Email"
+
                 android:lines="1" />
         </LinearLayout>
+
 
 
         <LinearLayout
