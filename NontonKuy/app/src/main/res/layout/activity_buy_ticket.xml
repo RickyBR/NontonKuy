@@ -269,7 +269,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:fontFamily="@font/montserratlight"
-                    android:text="Ticket Price :"
+                    android:text="Total Price :"
                     android:textColor="@color/white"
                     android:textSize="14sp" />
                 <TextView
@@ -281,10 +281,11 @@
                     android:textColor="@color/white"
                     android:textSize="14sp" />
                 <TextView
+                    android:id="@+id/totalprice"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/montserratlight"
-                    android:text="35000"
+                    android:text="0"
                     android:textColor="@color/white"
                     android:textSize="14sp" />
 
@@ -301,6 +302,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/linearLayout9">
 
                 <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_plus"
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:background="@drawable/bg_btn_plus_ticket"
@@ -310,6 +312,7 @@
                     android:textSize="11sp" />
 
                 <TextView
+                    android:id="@+id/total_tickets"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="12dp"
@@ -320,6 +323,7 @@
                     android:textSize="14sp" />
 
                 <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_minus"
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:background="@drawable/bg_btn_plus_ticket"
