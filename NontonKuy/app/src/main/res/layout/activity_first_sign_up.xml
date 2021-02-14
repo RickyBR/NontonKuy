@@ -49,6 +49,7 @@
                 android:textSize="16dp" />
 
             <EditText
+                android:id="@+id/tv_username"
                 android:layout_width="230dp"
                 android:layout_height="41dp"
                 android:layout_marginTop="8dp"
@@ -74,6 +75,7 @@
                 android:textSize="16dp" />
 
             <EditText
+                android:id="@+id/tv_email"
                 android:layout_width="230dp"
                 android:layout_height="41dp"
                 android:layout_marginTop="8dp"
@@ -99,6 +101,7 @@
                 android:textSize="16dp" />
 
             <EditText
+                android:id="@+id/tv_password"
                 android:layout_width="230dp"
                 android:layout_height="41dp"
                 android:layout_marginTop="8dp"

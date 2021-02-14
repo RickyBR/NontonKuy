@@ -49,12 +49,12 @@
                 android:textSize="16dp" />
 
             <EditText
+                android:id="@+id/tv_username"
                 android:layout_width="230dp"
                 android:layout_height="41dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/bg_editview"
                 android:fontFamily="@font/mmedium"
-                android:hint="Username"
                 android:lines="1" />
         </LinearLayout>
 
@@ -69,17 +69,18 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
                 android:fontFamily="@font/mregular"
-                android:text="Email"
+                android:text="Password"
                 android:textColor="@color/white"
                 android:textSize="16dp" />
 
             <EditText
+                android:id="@+id/tv_password"
                 android:layout_width="230dp"
                 android:layout_height="41dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/bg_editview"
                 android:fontFamily="@font/mmedium"
-                android:hint="Email"
+                android:inputType="textPassword"
                 android:lines="1" />
         </LinearLayout>
 
@@ -105,7 +106,7 @@
                 android:layout_marginStart="4dp"
                 android:layout_marginTop="8dp"
                 android:fontFamily="@font/mmedium"
-                android:text="Sign In"
+                android:text="Sign Up"
                 android:textColor="@color/white"
                 android:textSize="14dp" />
         </LinearLayout>
@@ -117,6 +118,7 @@
 
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_signin"
         android:layout_width="230dp"
         android:layout_height="40dp"
         android:layout_marginTop="32dp"

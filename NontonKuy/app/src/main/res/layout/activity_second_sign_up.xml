@@ -48,6 +48,7 @@
                 android:textSize="16dp" />
 
             <EditText
+                android:id="@+id/tv_name"
                 android:layout_width="230dp"
                 android:layout_height="41dp"
                 android:layout_marginTop="8dp"
@@ -73,12 +74,12 @@
                 android:textSize="16dp" />
 
             <EditText
+                android:id="@+id/tv_bio"
                 android:layout_width="230dp"
                 android:layout_height="41dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/bg_editview"
                 android:fontFamily="@font/mmedium"
-
                 android:lines="1" />
         </LinearLayout>
 
@@ -162,6 +163,7 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_add_photo"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginTop="96dp"
