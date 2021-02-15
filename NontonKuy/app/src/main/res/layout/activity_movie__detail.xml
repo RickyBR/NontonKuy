@@ -55,10 +55,9 @@
             </RelativeLayout>
 
             <ImageView
-                android:id="@+id/imageView3"
+                android:id="@+id/film_photo"
                 android:layout_width="155dp"
                 android:layout_height="220dp"
-
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="24dp"
                 android:src="@drawable/joker_film"
@@ -71,10 +70,11 @@
                 android:layout_marginStart="24dp"
                 android:layout_marginTop="34dp"
                 android:orientation="vertical"
-                app:layout_constraintStart_toEndOf="@+id/imageView3"
+                app:layout_constraintStart_toEndOf="@+id/film_photo"
                 app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
 
                 <TextView
+                    android:id="@+id/judul_film"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/mmedium"
@@ -97,6 +97,7 @@
                         android:textSize="13sp" />
 
                     <TextView
+                        android:id="@+id/rating_film"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/montserratlight"
@@ -122,6 +123,7 @@
                         android:textSize="13sp" />
 
                     <TextView
+                        android:id="@+id/director_film"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/montserratlight"
@@ -146,7 +148,8 @@
                         android:textSize="13sp" />
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:id="@+id/cast_film"
+                        android:layout_width="150dp"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/montserratlight"
                         android:lineSpacingExtra="2dp"
@@ -170,10 +173,10 @@
                 android:textColor="@color/white"
                 android:textSize="14sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+                app:layout_constraintTop_toBottomOf="@+id/film_photo" />
 
             <TextView
-                android:id="@+id/textView8"
+                android:id="@+id/sinopsis_film"
                 android:layout_width="350dp"
                 android:layout_height="200dp"
                 android:layout_marginStart="16dp"
@@ -208,7 +211,7 @@ mastermind known as the Joker."
                 android:textColor="@color/white"
                 android:textSize="11sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView8" />
+                app:layout_constraintTop_toBottomOf="@+id/sinopsis_film" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
