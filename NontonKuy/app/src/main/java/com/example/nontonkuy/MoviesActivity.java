@@ -19,7 +19,7 @@ public class MoviesActivity extends AppCompatActivity {
         btn_buy_joker.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent goBuyJoker = new Intent(MoviesActivity.this, Movie_Detail_Activity.class);
+                Intent goBuyJoker = new Intent(MoviesActivity.this, MovieDetailActivity.class);
                 startActivity(goBuyJoker);
             }
         });
