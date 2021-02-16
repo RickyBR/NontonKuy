@@ -143,6 +143,7 @@
                         android:textSize="14sp" />
 
                     <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_buy_endgame"
                         android:layout_width="155dp"
                         android:layout_height="30dp"
                         android:layout_marginTop="8dp"
@@ -193,6 +194,7 @@
                         android:textSize="14sp" />
 
                     <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_buy_lotr"
                         android:layout_width="155dp"
                         android:layout_height="30dp"
                         android:layout_marginTop="8dp"
@@ -233,6 +235,7 @@
                         android:textSize="14sp" />
 
                     <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_buy_spongebob"
                         android:layout_width="155dp"
                         android:layout_height="30dp"
                         android:layout_marginTop="8dp"
@@ -282,6 +285,7 @@
                         android:textSize="14sp" />
 
                     <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_buy_yourname"
                         android:layout_width="155dp"
                         android:layout_height="30dp"
                         android:layout_marginTop="8dp"
