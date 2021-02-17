@@ -17,7 +17,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Picasso;
 
-public class MovieDetailActivity extends AppCompatActivity {
+public class    MovieDetailActivity extends AppCompatActivity {
     Button btn_buy_fix;
     TextView nama_film,rating_film,director_film,cast_film,sinopsis_film;
     ImageView film_photo;
@@ -63,6 +63,7 @@ public class MovieDetailActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent goBuyTicketFix = new Intent(MovieDetailActivity.this, BuyTicketActivity.class);
+                goBuyTicketFix.putExtra("judul_film",judul_film_baru);
                 startActivity(goBuyTicketFix);
             }
         });
