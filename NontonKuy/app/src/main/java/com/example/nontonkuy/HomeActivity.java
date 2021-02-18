@@ -20,7 +20,7 @@ import com.google.firebase.database.ValueEventListener;
 public class HomeActivity extends AppCompatActivity {
 
     ImageView movies_navbar,akun_navbar;
-    TextView name_user;
+    TextView name_user,seeallnews;
     Button btn_joker,btn_endgame,btn_lotr,btn_yourname;
 
     String USERNAME_KEY = "usernamekey";
@@ -35,6 +35,7 @@ public class HomeActivity extends AppCompatActivity {
         movies_navbar = findViewById(R.id.movies_navbar);
         akun_navbar = findViewById(R.id.akun_navbar);
         name_user = findViewById(R.id.name_user);
+        seeallnews = findViewById(R.id.seeallnews);
 
         btn_endgame = findViewById(R.id.btn_endgame);
         btn_joker = findViewById(R.id.btn_joker);
@@ -100,6 +101,14 @@ public class HomeActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent goAkunPage = new Intent(HomeActivity.this, MyProfileActivity.class);
                 startActivity(goAkunPage);
+            }
+        });
+
+        seeallnews.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent goSeeNews = new Intent(HomeActivity.this, NewsActivity.class);
+                startActivity(goSeeNews);
             }
         });
     }

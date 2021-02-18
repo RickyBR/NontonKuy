@@ -51,7 +51,7 @@
         app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
 
     <LinearLayout
-        android:id="@+id/linearLayout3"
+        android:id="@+id/captnews"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -60,7 +60,7 @@
 
         <LinearLayout
             android:id="@+id/linearLayout2"
-            android:layout_width="wrap_content"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="12dp"
@@ -118,10 +118,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+        app:layout_constraintTop_toBottomOf="@+id/captnews" />
 
     <LinearLayout
-        android:id="@+id/linearLayout4"
+        android:id="@+id/jlnews"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -131,7 +131,7 @@
 
         <LinearLayout
             android:id="@+id/linearLayout5"
-            android:layout_width="wrap_content"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="12dp"
@@ -140,11 +140,11 @@
             app:layout_constraintTop_toBottomOf="@+id/newsevent">
 
             <TextView
-                android:id="@+id/news_spongebob_home"
+                android:id="@+id/news_jl_home"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montserratlight"
-                android:text="Movie Kimetsu no Yaiba akhirnya tayang di ..."
+                android:text="Film Justice League versi Zack Snyder alias... "
                 android:textColor="@color/white"
                 android:textSize="13dp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -169,7 +169,7 @@
             android:layout_marginStart="14dp"
             android:layout_marginTop="4dp"
             android:layout_marginEnd="16dp"
-            android:src="@drawable/mugentrain_news"
+            android:src="@drawable/jl_news"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/linearLayout2"
@@ -187,7 +187,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+        app:layout_constraintTop_toBottomOf="@+id/jlnews" />
     <LinearLayout
         android:id="@+id/jbnews"
         android:layout_width="match_parent"
@@ -199,7 +199,7 @@
 
         <LinearLayout
             android:id="@+id/linearjb"
-            android:layout_width="wrap_content"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="12dp"
@@ -277,10 +277,10 @@
 
             <TextView
                 android:id="@+id/news_eternal_home"
-                android:layout_width="wrap_content"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montserratlight"
-                android:text="Sinopsis The Eternals sudah rilis,Cerita setel..."
+                android:text="Sinopsis The Eternals sudah rilis,Cerita setela..."
                 android:textColor="@color/white"
                 android:textSize="13dp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -314,54 +314,6 @@
     </LinearLayout>
 
 
-    <LinearLayout
-        android:id="@+id/linearLayout6"
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:layout_alignParentBottom="true"
-        android:layout_gravity="bottom"
-        android:background="@color/header_color"
-        android:orientation="horizontal"
 
-        app:layout_constraintBottom_toBottomOf="parent">
-
-        <ImageView
-            android:id="@+id/home_navbar"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:layout_marginStart="36dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="36dp"
-            android:src="@drawable/home" />
-
-        <ImageView
-            android:id="@+id/movies_navbar"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:layout_marginStart="36dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="36dp"
-            android:src="@drawable/movies" />
-
-        <ImageView
-            android:id="@+id/history_navbar"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:layout_marginStart="36dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="36dp"
-            android:src="@drawable/history" />
-
-        <ImageView
-            android:id="@+id/akun_navbar"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:layout_marginStart="40dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="36dp"
-            android:src="@drawable/akun" />
-
-
-    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
