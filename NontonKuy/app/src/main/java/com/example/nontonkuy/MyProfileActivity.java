@@ -98,8 +98,9 @@ public class MyProfileActivity extends AppCompatActivity {
         edit_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                edit_btn.setVisibility(View.GONE);
+
                 cancel_btn.setVisibility(View.VISIBLE);
+                btn_gohome.setVisibility(View.VISIBLE);
                 et_email.setEnabled(true);
                 et_username.setEnabled(true);
                 et_password.setEnabled(true);

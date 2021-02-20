@@ -19,7 +19,7 @@ import com.google.firebase.database.ValueEventListener;
 
 public class HomeActivity extends AppCompatActivity {
 
-    ImageView movies_navbar,akun_navbar;
+    ImageView movies_navbar,akun_navbar,history_navbar;
     TextView name_user,seeallnews;
     Button btn_joker,btn_endgame,btn_lotr,btn_yourname;
 
@@ -34,6 +34,7 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
         movies_navbar = findViewById(R.id.movies_navbar);
         akun_navbar = findViewById(R.id.akun_navbar);
+        history_navbar = findViewById(R.id.history_navbar);
         name_user = findViewById(R.id.name_user);
         seeallnews = findViewById(R.id.seeallnews);
 
@@ -101,6 +102,13 @@ public class HomeActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent goAkunPage = new Intent(HomeActivity.this, MyProfileActivity.class);
                 startActivity(goAkunPage);
+            }
+        });
+        history_navbar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent goHistoryPage = new Intent(HomeActivity.this , HistoryActivity.class);
+                startActivity(goHistoryPage);
             }
         });
 

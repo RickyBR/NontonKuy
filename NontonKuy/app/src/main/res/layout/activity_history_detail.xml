@@ -58,6 +58,7 @@
         app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
 
         <TextView
+            android:id="@+id/judul_film"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/mmedium"
@@ -72,6 +73,7 @@
             android:orientation="horizontal">
 
             <TextView
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montserratlight"
@@ -80,6 +82,7 @@
                 android:textSize="13sp" />
 
             <TextView
+                android:id="@+id/location_ticket"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montserratlight"
@@ -105,6 +108,7 @@
                 android:textSize="13sp" />
 
             <TextView
+                android:id="@+id/time_ticket"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montserratlight"
@@ -129,6 +133,7 @@
                 android:textSize="13sp" />
 
             <TextView
+                android:id="@+id/no_cinema"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montserratlight"
@@ -182,6 +187,7 @@
                 android:textSize="13sp" />
 
             <TextView
+                android:id="@+id/total_tickets"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montserratlight"
@@ -215,6 +221,7 @@
                 android:textColor="@color/white"
                 android:textSize="13sp" />
             <TextView
+                android:id="@+id/totalprice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montserratlight"

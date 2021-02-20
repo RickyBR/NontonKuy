@@ -54,7 +54,7 @@
                 android:layout_marginTop="8dp"
                 android:background="@drawable/bg_editview"
                 android:fontFamily="@font/mmedium"
-
+                android:paddingLeft="4dp"
                 android:lines="1" />
         </LinearLayout>
 
@@ -80,6 +80,7 @@
                 android:layout_marginTop="8dp"
                 android:background="@drawable/bg_editview"
                 android:fontFamily="@font/mmedium"
+                android:paddingLeft="4dp"
                 android:lines="1" />
         </LinearLayout>
 

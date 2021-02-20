@@ -159,6 +159,33 @@
                         android:textSize="13sp" />
 
                 </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserratlight"
+                        android:text="Cinema     : "
+                        android:textColor="@color/white"
+                        android:textSize="13sp"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/no_cinema"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserratlight"
+                        android:lineSpacingExtra="2dp"
+                        android:text="1"
+                        android:textColor="@color/white"
+                        android:textSize="13sp"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
 
 
             </LinearLayout>

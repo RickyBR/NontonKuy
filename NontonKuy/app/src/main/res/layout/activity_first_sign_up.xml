@@ -55,7 +55,8 @@
                 android:layout_marginTop="8dp"
                 android:background="@drawable/bg_editview"
                 android:fontFamily="@font/mmedium"
-                android:hint="Username"
+                android:paddingLeft="4dp"
+
                 android:lines="1" />
         </LinearLayout>
 
@@ -71,6 +72,7 @@
                 android:layout_marginStart="4dp"
                 android:fontFamily="@font/mregular"
                 android:text="Email"
+
                 android:textColor="@color/white"
                 android:textSize="16dp" />
 
@@ -80,7 +82,8 @@
                 android:layout_height="41dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/bg_editview"
-                android:hint="Email"
+
+                android:paddingLeft="4dp"
                 android:fontFamily="@font/mmedium"
                 android:lines="1" />
         </LinearLayout>
@@ -97,6 +100,7 @@
                 android:layout_marginStart="4dp"
                 android:fontFamily="@font/mregular"
                 android:text="Password"
+
                 android:textColor="@color/white"
                 android:textSize="16dp" />
 
@@ -108,7 +112,8 @@
                 android:background="@drawable/bg_editview"
                 android:inputType="textPassword"
                 android:fontFamily="@font/mmedium"
-                android:hint="Password"
+                android:paddingLeft="4dp"
+
                 android:lines="1" />
         </LinearLayout>
 
