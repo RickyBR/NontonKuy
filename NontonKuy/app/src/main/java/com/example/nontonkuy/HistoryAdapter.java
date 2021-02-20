@@ -34,13 +34,13 @@ public class HistoryAdapter extends RecyclerView.Adapter<HistoryAdapter.MyViewHo
         myViewHolder.xjudul_film.setText(historyTicket.get(i).getNama_film());
         myViewHolder.xno_cinema.setText(historyTicket.get(i).getCinema());
 
-        final String  getJudulFilm = historyTicket.get(i).getNama_film();
+        String  getJudulFilm = historyTicket.get(i).getNama_film();
+
         myViewHolder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent gotoHistoryDetails = new Intent(context, HistoryDetailActivity.class);
-
-                gotoHistoryDetails.putExtra("judul_film", getJudulFilm);
+                gotoHistoryDetails.putExtra("judulfilm", getJudulFilm);
                 context.startActivity(gotoHistoryDetails);
             }
         });
