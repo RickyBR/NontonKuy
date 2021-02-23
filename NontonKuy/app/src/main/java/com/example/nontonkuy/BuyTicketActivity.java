@@ -26,7 +26,7 @@ public class BuyTicketActivity extends AppCompatActivity {
     Integer valuetotaltickets = 1;
     Integer valuetotalprice= 0;
     Integer valueticketprice = 35000;
-    TextView nama_film,rating_film,director_film,cast_film,location_ticket,time_ticket,no_cinema;
+    TextView nama_film,rating_film,director_film,cast_film,location_ticket,time_ticket,no_cinema,id_film;
     ImageView film_photo;
     String USERNAME_KEY = "usernamekey";
     String username_key = "";
@@ -51,6 +51,7 @@ public class BuyTicketActivity extends AppCompatActivity {
         time_ticket = findViewById(R.id.time_ticket);
         film_photo = findViewById(R.id.film_photo);
         no_cinema = findViewById(R.id.no_cinema);
+        id_film = findViewById(R.id.id_film);
 
 
         total_tickets.setText(valuetotaltickets.toString());
@@ -76,7 +77,7 @@ public class BuyTicketActivity extends AppCompatActivity {
                 location_ticket.setText(dataSnapshot.child("lokasi_film").getValue().toString());
                 time_ticket.setText(dataSnapshot.child("waktu_film").getValue().toString());
                 no_cinema.setText(dataSnapshot.child("cinema").getValue().toString());
-
+                id_film.setText(dataSnapshot.child("id_film").getValue().toString());
                 Picasso.with(BuyTicketActivity.this).load(dataSnapshot.child("url_photo")
                         .getValue().toString()).centerCrop().fit().into(film_photo);
             }
@@ -132,6 +133,7 @@ public class BuyTicketActivity extends AppCompatActivity {
                     reference3.getRef().child("jumlah_tiket").setValue(total_tickets.getText().toString());
                     reference3.getRef().child("total_harga").setValue(totalprice.getText().toString());
                     reference3.getRef().child("cinema").setValue(no_cinema.getText().toString());
+                    reference3.getRef().child("id_film").setValue(id_film.getText().toString());
                     }
 
                     @Override

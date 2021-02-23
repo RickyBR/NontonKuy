@@ -15,7 +15,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class MoviesActivity extends AppCompatActivity {
     Button btn_buy_joker,btn_buy_endgame,btn_buy_lotr,btn_buy_yourname,btn_buy_spongebob;
-    ImageView movies_navbar,akun_navbar;
+    ImageView movies_navbar,akun_navbar,home_navbar,history_navbar;
 
 
 
@@ -29,6 +29,10 @@ public class MoviesActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_movies);
+        home_navbar = findViewById(R.id.home_navbar);
+        movies_navbar = findViewById(R.id.movies_navbar);
+        akun_navbar = findViewById(R.id.akun_navbar);
+        history_navbar = findViewById(R.id.history_navbar);
         btn_buy_joker = findViewById(R.id.btn_buy_joker);
         btn_buy_endgame = findViewById(R.id.btn_buy_endgame);
         btn_buy_yourname = findViewById(R.id.btn_buy_yourname);
@@ -77,6 +81,36 @@ public class MoviesActivity extends AppCompatActivity {
                 Intent goBuyJoker = new Intent(MoviesActivity.this, MovieDetailActivity.class);
                 goBuyJoker.putExtra("judul_film","LOTR");
                 startActivity(goBuyJoker);
+            }
+        });
+        home_navbar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent goHomePage = new Intent(MoviesActivity.this, HomeActivity.class);
+                startActivity(goHomePage);
+            }
+        });
+        movies_navbar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent goMoviesPage = new Intent(MoviesActivity.this, MoviesActivity.class);
+                startActivity(goMoviesPage);
+            }
+        });
+
+
+        akun_navbar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent goAkunPage = new Intent(MoviesActivity.this, MyProfileActivity.class);
+                startActivity(goAkunPage);
+            }
+        });
+        history_navbar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent goHistoryPage = new Intent(MoviesActivity.this , HistoryActivity.class);
+                startActivity(goHistoryPage);
             }
         });
     }

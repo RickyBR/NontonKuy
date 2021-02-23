@@ -2,7 +2,7 @@ package com.example.nontonkuy;
 
 public class HistoryTicket {
 
-    String nama_film,lokasi_film,waktu_film,cinema,jumlah_tiket;
+    String nama_film,lokasi_film,waktu_film,cinema,jumlah_tiket,id_film;
     String total_harga;
 
     public HistoryTicket() {
@@ -15,6 +15,7 @@ public class HistoryTicket {
         this.cinema = cinema;
         this.jumlah_tiket = jumlah_tiket;
         this.total_harga = total_harga;
+        this.id_film = id_film;
     }
 
     public String getNama_film() {
@@ -63,5 +64,13 @@ public class HistoryTicket {
 
     public void setTotal_harga(String total_harga) {
         this.total_harga = total_harga;
+    }
+
+    public String getId_film() {
+        return id_film;
+    }
+
+    public void setId_film(String id_film) {
+        this.id_film = id_film;
     }
 }

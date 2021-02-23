@@ -26,7 +26,7 @@
             android:id="@+id/imageView"
             android:layout_width="151dp"
             android:layout_height="32dp"
-            android:layout_marginStart="115dp"
+            android:layout_marginStart="130dp"
             android:layout_marginTop="12dp"
             android:src="@drawable/logo"
             app:layout_constraintBottom_toBottomOf="@+id/view2"
@@ -58,7 +58,7 @@
         app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
 
         <TextView
-            android:id="@+id/xjudul_film"
+            android:id="@+id/xnama_film"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/mmedium"
@@ -137,176 +137,61 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montserratlight"
-
                 android:text="1"
                 android:textColor="@color/white"
                 android:textSize="13sp" />
 
+
         </LinearLayout>
+        <TextView
+            android:id="@+id/xid_film"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserratlight"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
 
 
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:fontFamily="@font/mregular"
-        android:text="Payment Details"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/film_photo" />
-
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:orientation="vertical"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView13">
-
-
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:orientation="horizontal">
-
-            <TextView
+     <TextView
+                android:id="@+id/textView7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/montserratlight"
-                android:text="Total Tickets          : "
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/mregular"
+                android:text="Synopsis"
                 android:textColor="@color/white"
-                android:textSize="13sp" />
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/film_photo" />
 
             <TextView
-                android:id="@+id/xtotal_tickets"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/sinopsis_film"
+                android:layout_width="350dp"
+                android:layout_height="200dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
                 android:fontFamily="@font/montserratlight"
-                android:text="3"
+                android:lineSpacingExtra="5dp"
+                android:text="Forever alone in a crowd, failed comedian Arthur Fleck seeks connection as he walks
+the streets of Gotham City. Arthur wears two
+masks -- the one he paints for his day job as
+ a clown, and the guise he projects in a futile
+ attempt to feel like he's part of the world
+around him. Isolated, bullied and disregarded
+ by society, Fleck begins a slow descent \ninto
+madness as he transforms into the criminal\n
+mastermind known as the Joker."
                 android:textColor="@color/white"
-                android:textSize="13sp" />
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
 
-        </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/montserratlight"
-                android:text="Total Price              : "
-                android:textColor="@color/white"
-
-                android:textSize="13sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/montserratlight"
-                android:text="Rp"
-                android:textColor="@color/white"
-                android:textSize="13sp" />
-            <TextView
-                android:id="@+id/xtotalprice"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/montserratlight"
-                android:layout_marginStart="4dp"
-                android:text="70000"
-                android:textColor="@color/white"
-                android:textSize="13sp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/montserratlight"
-                android:text="Payment Method : "
-                android:textColor="@color/white"
-                android:textSize="13sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/montserratlight"
-
-                android:text="Virtual Account"
-                android:textColor="@color/white"
-                android:textSize="13sp" />
-
-        </LinearLayout>
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout6"
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:layout_alignParentBottom="true"
-        android:layout_gravity="bottom"
-        android:background="@color/header_color"
-        android:orientation="horizontal"
-
-        app:layout_constraintBottom_toBottomOf="parent">
-
-        <ImageView
-            android:id="@+id/home_navbar"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:layout_marginStart="36dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="36dp"
-            android:src="@drawable/home" />
-
-        <ImageView
-            android:id="@+id/movies_navbar"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:layout_marginStart="36dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="36dp"
-            android:src="@drawable/movies" />
-
-        <ImageView
-            android:id="@+id/history_navbar"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:layout_marginStart="36dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="36dp"
-            android:src="@drawable/history" />
-
-        <ImageView
-            android:id="@+id/akun_navbar"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:layout_marginStart="40dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="36dp"
-            android:src="@drawable/akun" />
-
-
-    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

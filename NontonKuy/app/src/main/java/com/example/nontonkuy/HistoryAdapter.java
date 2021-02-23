@@ -15,11 +15,11 @@ import java.util.ArrayList;
 public class HistoryAdapter extends RecyclerView.Adapter<HistoryAdapter.MyViewHolder>{
 
     Context context;
-    ArrayList<HistoryTicket> historyTicket;
+    ArrayList<HistoryTicket> historyTickets;
 
     public  HistoryAdapter(Context c,ArrayList<HistoryTicket> p){
         context = c;
-        historyTicket = p;
+        historyTickets = p;
     }
 
     @NonNull
@@ -30,11 +30,14 @@ public class HistoryAdapter extends RecyclerView.Adapter<HistoryAdapter.MyViewHo
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder myViewHolder, int i) {
-        myViewHolder.xjumlah_tiket.setText(historyTicket.get(i).getJumlah_tiket()+ " Tickets");
-        myViewHolder.xjudul_film.setText(historyTicket.get(i).getNama_film());
-        myViewHolder.xno_cinema.setText(historyTicket.get(i).getCinema());
+        myViewHolder.xjumlah_tiket.setText(historyTickets.get(i).getJumlah_tiket()+ " Tickets");
+        myViewHolder.xjudul_film.setText(historyTickets.get(i).getNama_film());
+        myViewHolder.xno_cinema.setText(historyTickets.get(i).getCinema());
+        myViewHolder.xid_film.setText(historyTickets.get(i).getId_film());
+        myViewHolder.xtotalprice.setText(historyTickets.get(i).getTotal_harga());
+        myViewHolder.xtime_ticket.setText(historyTickets.get(i).getWaktu_film());
 
-        String  getJudulFilm = historyTicket.get(i).getNama_film();
+        String  getJudulFilm = historyTickets.get(i).getId_film();
 
         myViewHolder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,17 +51,21 @@ public class HistoryAdapter extends RecyclerView.Adapter<HistoryAdapter.MyViewHo
 
     @Override
     public int getItemCount() {
-        return historyTicket.size();
+        return historyTickets.size();
     }
 
     class MyViewHolder extends RecyclerView.ViewHolder{
 
-        TextView xjudul_film,xjumlah_tiket,xno_cinema;
+        TextView xjudul_film,xjumlah_tiket,xno_cinema,xid_film,xtotalprice,xtime_ticket;
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             xjudul_film = itemView.findViewById(R.id.xjudul_film);
             xjumlah_tiket = itemView.findViewById(R.id.xjumlah_ticket);
             xno_cinema = itemView.findViewById(R.id.no_cinema);
+            xid_film = itemView.findViewById(R.id.id_film);
+            xtotalprice = itemView.findViewById(R.id.xtotalprice);
+            xtime_ticket = itemView.findViewById(R.id.xtime_ticket);
+
         }
     }
 }

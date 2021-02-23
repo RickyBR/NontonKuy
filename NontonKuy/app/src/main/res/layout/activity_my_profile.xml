@@ -275,6 +275,16 @@
             android:fontFamily="@font/mregular"
             android:text="Save Data"
             android:textColor="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_signout"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_btn_secondary"
+            android:fontFamily="@font/mregular"
+            android:text="Sign Out"
+            android:textColor="@color/black" />
     </LinearLayout>
 
 

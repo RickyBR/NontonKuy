@@ -31,8 +31,9 @@ import com.squareup.picasso.Picasso;
 
 public class MyProfileActivity extends AppCompatActivity {
     ImageView pict_user;
+    ImageView movies_navbar,akun_navbar,history_navbar,home_navbar;
     EditText et_name,et_bio,et_password,et_email,et_username;
-    Button change_pict,btn_gohome;
+    Button change_pict,btn_gohome,btn_signout;
     TextView edit_btn,cancel_btn;
 
     Uri photo_location;
@@ -40,7 +41,7 @@ public class MyProfileActivity extends AppCompatActivity {
 
     DatabaseReference reference;
     StorageReference storage;
-    ImageView photo_edit_profile;
+
 
     String USERNAME_KEY = "usernamekey";
     String username_key = "";
@@ -49,6 +50,10 @@ public class MyProfileActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_profile);
+        home_navbar = findViewById(R.id.home_navbar);
+        movies_navbar = findViewById(R.id.movies_navbar);
+        akun_navbar = findViewById(R.id.akun_navbar);
+        history_navbar = findViewById(R.id.history_navbar);
         et_name = findViewById(R.id.et_name);
         et_bio = findViewById(R.id.et_bio);
         et_password = findViewById(R.id.et_password);
@@ -59,6 +64,7 @@ public class MyProfileActivity extends AppCompatActivity {
         edit_btn = findViewById(R.id.edit_btn);
         cancel_btn = findViewById(R.id.cancel_btn);
         btn_gohome = findViewById(R.id.btn_gohome);
+        btn_signout = findViewById(R.id.btn_signout);
 
 
         getUsernameLocal();
@@ -95,10 +101,25 @@ public class MyProfileActivity extends AppCompatActivity {
             }
         });
 
+        btn_signout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //save data to database
+                SharedPreferences sharedPreferences = getSharedPreferences(USERNAME_KEY,MODE_PRIVATE);
+                SharedPreferences.Editor editor =sharedPreferences.edit();
+                editor.putString(username_key,null);
+                editor.apply();
+
+                //move to signin
+                Intent gosignout = new Intent(MyProfileActivity.this, SignInActivity.class);
+                startActivity(gosignout);
+                finish();
+            }
+        });
         edit_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                edit_btn.setVisibility(View.GONE);
                 cancel_btn.setVisibility(View.VISIBLE);
                 btn_gohome.setVisibility(View.VISIBLE);
                 et_email.setEnabled(true);
@@ -108,7 +129,6 @@ public class MyProfileActivity extends AppCompatActivity {
                 et_name.setEnabled(true);
                 change_pict.animate().alpha(1).setDuration(300).start();
                 change_pict.setEnabled(true);
-
 
 
             }
@@ -190,6 +210,37 @@ public class MyProfileActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 findPhoto();
+            }
+        });
+
+        home_navbar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent goHomePage = new Intent(MyProfileActivity.this, HomeActivity.class);
+                startActivity(goHomePage);
+            }
+        });
+        movies_navbar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent goMoviesPage = new Intent(MyProfileActivity.this, MoviesActivity.class);
+                startActivity(goMoviesPage);
+            }
+        });
+
+
+        akun_navbar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent goAkunPage = new Intent(MyProfileActivity.this, MyProfileActivity.class);
+                startActivity(goAkunPage);
+            }
+        });
+        history_navbar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent goHistoryPage = new Intent(MyProfileActivity.this , HistoryActivity.class);
+                startActivity(goHistoryPage);
             }
         });
 
