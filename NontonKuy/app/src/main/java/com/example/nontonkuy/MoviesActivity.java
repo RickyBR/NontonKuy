@@ -13,7 +13,7 @@ import android.widget.TextView;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class MoviesActivity extends AppCompatActivity {
+public class    MoviesActivity extends AppCompatActivity {
     Button btn_buy_joker,btn_buy_endgame,btn_buy_lotr,btn_buy_yourname,btn_buy_spongebob;
     ImageView movies_navbar,akun_navbar,home_navbar,history_navbar;
 

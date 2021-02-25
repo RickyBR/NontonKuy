@@ -19,7 +19,7 @@
         tools:ignore="MissingConstraints">
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="850dp">
+            android:layout_height="match_parent">
 
 
 
@@ -258,34 +258,38 @@
 
     </com.github.florent37.shapeofview.shapes.CircleView>
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="250dp"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="50dp">
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_gohome"
-            android:layout_width="250dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="50dp"
-            android:background="@drawable/bg_btn_primary"
-            android:fontFamily="@font/mregular"
-            android:text="Save Data"
-            android:textColor="@color/white" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_gohome"
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_signout"
-            android:layout_width="250dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/bg_btn_secondary"
-            android:fontFamily="@font/mregular"
-            android:text="Sign Out"
-            android:textColor="@color/black" />
-    </LinearLayout>
+                    android:background="@drawable/bg_btn_primary"
+                    android:fontFamily="@font/mregular"
+                    android:text="Save Data"
+                    android:textColor="@color/white" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_signout"
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="50dp"
+                    android:background="@drawable/bg_btn_secondary"
+                    android:fontFamily="@font/mregular"
+                    android:text="Sign Out"
+                    android:textColor="@color/black" />
+            </LinearLayout>
 
 
 
@@ -294,7 +298,7 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginTop="133dp"
-        android:layout_marginEnd="175dp"
+        android:layout_marginEnd="115dp"
         android:background="@drawable/bg_btn_plus"
         android:fontFamily="@font/mmedium"
         android:text="+"
@@ -302,6 +306,7 @@
         android:textSize="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/navbar_atas" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 

@@ -24,7 +24,7 @@
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="151dp"
+            android:layout_width="140dp"
             android:layout_height="32dp"
             android:layout_marginStart="130dp"
             android:layout_marginTop="12dp"
@@ -39,7 +39,7 @@
 
     <ImageView
         android:id="@+id/news_image"
-        android:layout_width="380dp"
+        android:layout_width="match_parent"
         android:layout_height="210dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
@@ -52,7 +52,7 @@
 
     <TextView
         android:id="@+id/news_caption"
-        android:layout_width="380dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
@@ -69,12 +69,14 @@ pada Film Avengers selanjutnya"
         app:layout_constraintTop_toBottomOf="@+id/news_image" />
 
 s
+
     <TextView
         android:id="@+id/news_isi_berita1"
-        android:layout_width="380dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
         android:fontFamily="@font/montserratlight"
         android:lineSpacingExtra="4dp"
         android:text="Chris Evans mungkin akan kembali dalam peran Steve
@@ -82,16 +84,18 @@ s
  diharapkan tampil di setidaknya satu film, dengan
 pintu terbuka untuk film kedua."
         android:textColor="@color/white"
-        android:textSize="13sp"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/news_caption" />
 
     <TextView
         android:id="@+id/news_isi_berita2"
-        android:layout_width="380dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
         android:fontFamily="@font/montserratlight"
         android:lineSpacingExtra="4dp"
         android:text="Masih belum jelas dalam kapasitas apa Evans akan
@@ -101,7 +105,8 @@ sebenarnya seperti yang dilakukan Robert Downey Jr
 dengan Tony Stark dalam film seperti
 Captain America: Civil War dan Spider-Man: Homecoming."
         android:textColor="@color/white"
-        android:textSize="13sp"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/news_isi_berita1" />
 

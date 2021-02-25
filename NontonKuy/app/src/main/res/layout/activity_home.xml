@@ -40,7 +40,7 @@
 
                 <ImageView
                     android:id="@+id/imageView"
-                    android:layout_width="151dp"
+                    android:layout_width="145dp"
                     android:layout_height="32dp"
                     android:layout_marginStart="130dp"
                     android:layout_marginTop="12dp"
@@ -205,7 +205,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="center"
+                           android:layout_marginStart="26dp"
                             android:fontFamily="@font/montserratlight"
                             android:text="Joker"
                             android:textColor="@color/white"
@@ -321,17 +321,20 @@
 
             <LinearLayout
                 android:id="@+id/linearLayout3"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
                 android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/newsevent">
 
                 <LinearLayout
                     android:id="@+id/linearLayout2"
-                    android:layout_width="300dp"
+                    android:layout_width="270dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
+
                     android:layout_marginTop="12dp"
                     android:orientation="vertical"
                     app:layout_constraintStart_toStartOf="parent"
@@ -342,7 +345,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/montserratlight"
-                        android:text="Captain America dirumorkan akan kembali... "
+                        android:text="Captain America dirumorkan akan kem... "
                         android:textColor="@color/white"
                         android:textSize="13dp"
                         app:layout_constraintStart_toStartOf="parent"
@@ -362,9 +365,9 @@
                 </LinearLayout>
 
                 <ImageView
-                    android:layout_width="65dp"
+                    android:layout_width="60dp"
                     android:layout_height="52dp"
-                    android:layout_marginStart="14dp"
+                    android:layout_marginStart="4dp"
                     android:layout_marginTop="4dp"
                     android:layout_marginEnd="16dp"
                     android:src="@drawable/capt_america_news"
@@ -394,15 +397,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="120dp"
                 android:layout_marginTop="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
                 android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/garis">
 
                 <LinearLayout
                     android:id="@+id/linearLayout5"
-                    android:layout_width="300dp"
+                    android:layout_width="270dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
+
                     android:layout_marginTop="12dp"
                     android:orientation="vertical"
                     app:layout_constraintStart_toStartOf="parent"
@@ -413,7 +419,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/montserratlight"
-                        android:text="Film Justice League versi Zack Snyder alias..."
+                        android:text="Film Justice League versi Zack Snyder al..."
                         android:textColor="@color/white"
                         android:textSize="13dp"
                         app:layout_constraintStart_toStartOf="parent"
@@ -433,9 +439,9 @@
                 </LinearLayout>
 
                 <ImageView
-                    android:layout_width="65dp"
+                    android:layout_width="60dp"
                     android:layout_height="52dp"
-                    android:layout_marginStart="14dp"
+                    android:layout_marginStart="4dp"
                     android:layout_marginTop="4dp"
                     android:layout_marginEnd="16dp"
                     android:src="@drawable/jl_news"
@@ -497,7 +503,7 @@
             android:id="@+id/akun_navbar"
             android:layout_width="25dp"
             android:layout_height="25dp"
-            android:layout_marginStart="40dp"
+            android:layout_marginStart="20dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="36dp"
             android:src="@drawable/akun" />

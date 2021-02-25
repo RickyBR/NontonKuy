@@ -74,7 +74,7 @@
 
                 <LinearLayout
                     android:id="@+id/linearLayout7"
-                    android:layout_width="wrap_content"
+                    android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
 
@@ -102,7 +102,7 @@
 
                     <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/btn_buy_joker"
-                        android:layout_width="155dp"
+                        android:layout_width="150dp"
                         android:layout_height="30dp"
                         android:layout_marginTop="8dp"
 
@@ -114,10 +114,10 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="150dp"
                     android:layout_height="wrap_content"
 
-                    android:layout_marginStart="34dp"
+                    android:layout_marginStart="16dp"
                     android:layout_marginEnd="16dp"
                     android:orientation="vertical"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -126,7 +126,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/textView4">
 
                     <ImageView
-                        android:layout_width="155dp"
+                        android:layout_width="150dp"
                         android:layout_height="220dp"
                         android:src="@drawable/endgame_film"
                         app:layout_constraintStart_toStartOf="parent"
@@ -144,7 +144,7 @@
 
                     <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/btn_buy_endgame"
-                        android:layout_width="155dp"
+                        android:layout_width="150dp"
                         android:layout_height="30dp"
                         android:layout_marginTop="8dp"
                         android:background="@drawable/bg_btn_primary"
@@ -168,7 +168,7 @@
 
                 <LinearLayout
                     android:id="@+id/linearfilm3"
-                    android:layout_width="wrap_content"
+                    android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginEnd="16dp"
@@ -177,7 +177,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/textView4">
 
                     <ImageView
-                        android:layout_width="155dp"
+                        android:layout_width="150dp"
                         android:layout_height="220dp"
                         android:src="@drawable/lotr_film"
                         app:layout_constraintStart_toStartOf="parent"
@@ -189,13 +189,13 @@
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="8dp"
                         android:fontFamily="@font/montserratlight"
-                        android:text="The Lord of the ring.."
+                        android:text="The Lord of the rin.."
                         android:textColor="@color/white"
                         android:textSize="14sp" />
 
                     <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/btn_buy_lotr"
-                        android:layout_width="155dp"
+                        android:layout_width="150dp"
                         android:layout_height="30dp"
                         android:layout_marginTop="8dp"
                         android:background="@drawable/bg_btn_primary"
@@ -206,10 +206,10 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="150dp"
                     android:layout_height="wrap_content"
 
-                    android:layout_marginStart="34dp"
+                    android:layout_marginStart="16dp"
                     android:layout_marginEnd="16dp"
                     android:orientation="vertical"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -218,7 +218,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/textView4">
 
                     <ImageView
-                        android:layout_width="155dp"
+                        android:layout_width="150dp"
                         android:layout_height="220dp"
                         android:src="@drawable/spongebob_film"
                         app:layout_constraintStart_toStartOf="parent"
@@ -230,13 +230,13 @@
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="8dp"
                         android:fontFamily="@font/montserratlight"
-                        android:text="The SpongeBob Mo.."
+                        android:text="The SpongeBob M.."
                         android:textColor="@color/white"
                         android:textSize="14sp" />
 
                     <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/btn_buy_spongebob"
-                        android:layout_width="155dp"
+                        android:layout_width="150dp"
                         android:layout_height="30dp"
                         android:layout_marginTop="8dp"
                         android:background="@drawable/bg_btn_primary"
@@ -246,20 +246,21 @@
                         android:textSize="11sp" />
                 </LinearLayout>
             </LinearLayout>
+
             <LinearLayout
                 android:id="@+id/horizontal_tiga"
                 android:layout_width="match_parent"
                 android:layout_height="350dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginBottom="100dp"
+                android:layout_marginTop="8dp"
                 android:orientation="horizontal"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/horizontal_dua">
 
                 <LinearLayout
                     android:id="@+id/linearfilm4"
-                    android:layout_width="wrap_content"
+                    android:layout_width="150dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginEnd="16dp"
@@ -268,7 +269,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/textView4">
 
                     <ImageView
-                        android:layout_width="155dp"
+                        android:layout_width="150dp"
                         android:layout_height="220dp"
                         android:src="@drawable/yourname_film"
                         app:layout_constraintStart_toStartOf="parent"
@@ -286,7 +287,7 @@
 
                     <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/btn_buy_yourname"
-                        android:layout_width="155dp"
+                        android:layout_width="150dp"
                         android:layout_height="30dp"
                         android:layout_marginTop="8dp"
                         android:background="@drawable/bg_btn_primary"

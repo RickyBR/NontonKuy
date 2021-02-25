@@ -55,6 +55,7 @@
                 android:layout_marginTop="8dp"
                 android:background="@drawable/bg_editview"
                 android:fontFamily="@font/mmedium"
+                android:paddingLeft="8dp"
                 android:lines="1" />
         </LinearLayout>
 
@@ -81,6 +82,7 @@
                 android:background="@drawable/bg_editview"
                 android:fontFamily="@font/mmedium"
                 android:inputType="textPassword"
+                android:paddingLeft="8dp"
                 android:lines="1" />
         </LinearLayout>
 

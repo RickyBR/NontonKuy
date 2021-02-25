@@ -52,17 +52,20 @@
 
     <LinearLayout
         android:id="@+id/captnews"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/news_caption">
 
         <LinearLayout
             android:id="@+id/linearLayout2"
-            android:layout_width="300dp"
+            android:layout_width="265dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
+
             android:layout_marginTop="12dp"
             android:orientation="vertical"
             app:layout_constraintStart_toStartOf="parent"
@@ -73,7 +76,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montserratlight"
-                android:text="Captain America dirumorkan akan kembali... "
+                android:text="Captain America dirumorkan akan Ke... "
                 android:textColor="@color/white"
                 android:textSize="13dp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -93,9 +96,9 @@
         </LinearLayout>
 
         <ImageView
-            android:layout_width="65dp"
+            android:layout_width="60dp"
             android:layout_height="52dp"
-            android:layout_marginStart="14dp"
+            android:layout_marginStart="4dp"
             android:layout_marginTop="4dp"
             android:layout_marginEnd="16dp"
             android:src="@drawable/capt_america_news"
@@ -124,16 +127,19 @@
         android:id="@+id/jlnews"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
         android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/garis">
 
         <LinearLayout
             android:id="@+id/linearLayout5"
-            android:layout_width="300dp"
+            android:layout_width="265dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
+
             android:layout_marginTop="12dp"
             android:orientation="vertical"
             app:layout_constraintStart_toStartOf="parent"
@@ -144,7 +150,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montserratlight"
-                android:text="Film Justice League versi Zack Snyder alias... "
+                android:text="Film Justice League versi Zack Snyder..."
                 android:textColor="@color/white"
                 android:textSize="13dp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -164,9 +170,9 @@
         </LinearLayout>
 
         <ImageView
-            android:layout_width="65dp"
+            android:layout_width="60dp"
             android:layout_height="52dp"
-            android:layout_marginStart="14dp"
+            android:layout_marginStart="4dp"
             android:layout_marginTop="4dp"
             android:layout_marginEnd="16dp"
             android:src="@drawable/jl_news"
@@ -188,20 +194,24 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/jlnews" />
+
     <LinearLayout
         android:id="@+id/jbnews"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
         android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/garis2">
 
         <LinearLayout
             android:id="@+id/linearjb"
-            android:layout_width="300dp"
+            android:layout_width="265dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
+
             android:layout_marginTop="12dp"
             android:orientation="vertical"
             app:layout_constraintStart_toStartOf="parent"
@@ -212,7 +222,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montserratlight"
-                android:text="Film James Bond No Time to die akan diun..."
+                android:text="Film James Bond No Time to die akan..."
                 android:textColor="@color/white"
                 android:textSize="13dp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -232,9 +242,9 @@
         </LinearLayout>
 
         <ImageView
-            android:layout_width="65dp"
+            android:layout_width="60dp"
             android:layout_height="52dp"
-            android:layout_marginStart="14dp"
+            android:layout_marginStart="4dp"
             android:layout_marginTop="4dp"
             android:layout_marginEnd="16dp"
             android:src="@drawable/jb_news"
@@ -256,12 +266,16 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/jbnews" />
+
     <LinearLayout
         android:id="@+id/eternalnews"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
         android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/garis3">
 
@@ -269,7 +283,7 @@
             android:id="@+id/lineareternal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
+
             android:layout_marginTop="12dp"
             android:orientation="vertical"
             app:layout_constraintStart_toStartOf="parent"
@@ -277,10 +291,10 @@
 
             <TextView
                 android:id="@+id/news_eternal_home"
-                android:layout_width="300dp"
+                android:layout_width="265dp"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/montserratlight"
-                android:text="Sinopsis The Eternals sudah rilis,Cerita setela..."
+                android:text="Sinopsis The Eternals sudah rilis, Cerita..."
                 android:textColor="@color/white"
                 android:textSize="13dp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -300,9 +314,9 @@
         </LinearLayout>
 
         <ImageView
-            android:layout_width="65dp"
+            android:layout_width="60dp"
             android:layout_height="52dp"
-            android:layout_marginStart="14dp"
+            android:layout_marginStart="4dp"
             android:layout_marginTop="4dp"
             android:layout_marginEnd="16dp"
             android:src="@drawable/eternal_news"

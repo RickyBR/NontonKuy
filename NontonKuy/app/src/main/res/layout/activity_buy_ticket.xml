@@ -56,7 +56,7 @@
 
             <ImageView
                 android:id="@+id/film_photo"
-                android:layout_width="155dp"
+                android:layout_width="150dp"
                 android:layout_height="220dp"
 
                 android:layout_marginStart="16dp"
@@ -66,11 +66,13 @@
                 app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
 
             <LinearLayout
-                android:layout_width="200dp"
+                android:layout_width="180dp"
                 android:layout_height="200dp"
                 android:layout_marginStart="24dp"
                 android:layout_marginTop="34dp"
+                android:layout_marginEnd="16dp"
                 android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/film_photo"
                 app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
 
@@ -95,7 +97,7 @@
                         android:fontFamily="@font/montserratlight"
                         android:text="Rating    : "
                         android:textColor="@color/white"
-                        android:textSize="13sp" />
+                        android:textSize="12sp" />
 
                     <TextView
                         android:id="@+id/rating_film"
@@ -104,7 +106,7 @@
                         android:fontFamily="@font/montserratlight"
                         android:text="17+"
                         android:textColor="@color/white"
-                        android:textSize="13sp" />
+                        android:textSize="12sp" />
 
 
                 </LinearLayout>
@@ -121,7 +123,7 @@
                         android:fontFamily="@font/montserratlight"
                         android:text="Director : "
                         android:textColor="@color/white"
-                        android:textSize="13sp" />
+                        android:textSize="12sp" />
 
                     <TextView
                         android:id="@+id/director_film"
@@ -130,7 +132,7 @@
                         android:fontFamily="@font/montserratlight"
                         android:text="Todd Philips"
                         android:textColor="@color/white"
-                        android:textSize="13sp" />
+                        android:textSize="12sp" />
 
                 </LinearLayout>
 
@@ -146,7 +148,7 @@
                         android:fontFamily="@font/montserratlight"
                         android:text="Cast        : "
                         android:textColor="@color/white"
-                        android:textSize="13sp" />
+                        android:textSize="12sp" />
 
                     <TextView
                         android:id="@+id/cast_film"
@@ -156,9 +158,10 @@
                         android:lineSpacingExtra="2dp"
                         android:text="Joaquin Phoenix, Robert de Niro,\n Zazie Beetz"
                         android:textColor="@color/white"
-                        android:textSize="13sp" />
+                        android:textSize="12sp" />
 
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -172,7 +175,7 @@
                         android:text="Cinema     : "
                         android:textColor="@color/white"
                         android:textSize="13sp"
-                        android:visibility="gone"/>
+                        android:visibility="gone" />
 
                     <TextView
                         android:id="@+id/no_cinema"
@@ -183,9 +186,10 @@
                         android:text="1"
                         android:textColor="@color/white"
                         android:textSize="13sp"
-                        android:visibility="gone"/>
+                        android:visibility="gone" />
 
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -199,8 +203,7 @@
                         android:text="Id     : "
                         android:textColor="@color/white"
                         android:textSize="13sp"
-                        android:visibility="gone"
-                       />
+                        android:visibility="gone" />
 
                     <TextView
                         android:id="@+id/id_film"
@@ -208,10 +211,9 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/montserratlight"
                         android:lineSpacingExtra="2dp"
-
                         android:textColor="@color/white"
                         android:textSize="13sp"
-                  />
+                        android:visibility="gone" />
 
                 </LinearLayout>
 
@@ -363,12 +365,12 @@
                 app:layout_constraintTop_toBottomOf="@+id/linearLayout9">
 
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/btn_plus"
+                    android:id="@+id/btn_minus"
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:background="@drawable/bg_btn_plus_ticket"
                     android:fontFamily="@font/mregular"
-                    android:text="+"
+                    android:text="-"
                     android:textColor="@color/white"
                     android:textSize="11sp" />
 
@@ -384,12 +386,13 @@
                     android:textSize="14sp" />
 
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/btn_minus"
+                    android:id="@+id/btn_plus"
+
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:background="@drawable/bg_btn_plus_ticket"
                     android:fontFamily="@font/mregular"
-                    android:text="-"
+                    android:text="+"
                     android:textColor="@color/white"
                     android:textSize="11sp" />
 
@@ -398,15 +401,19 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btn_buy_fix"
-                android:layout_width="380dp"
+                android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:layout_marginStart="12dp"
+                android:layout_marginStart="16dp"
                 android:layout_marginTop="120dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="32dp"
                 android:background="@drawable/bg_btn_primary"
                 android:fontFamily="@font/mregular"
                 android:text="Buy IT"
                 android:textColor="@color/white"
                 android:textSize="11sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/linearLayout10" />
 

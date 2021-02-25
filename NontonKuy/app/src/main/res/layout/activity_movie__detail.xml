@@ -56,8 +56,8 @@
 
             <ImageView
                 android:id="@+id/film_photo"
-                android:layout_width="155dp"
-                android:layout_height="220dp"
+                android:layout_width="150dp"
+                android:layout_height="230dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="24dp"
                 android:src="@drawable/joker_film"
@@ -65,11 +65,13 @@
                 app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
 
             <LinearLayout
-                android:layout_width="200dp"
+                android:layout_width="180dp"
                 android:layout_height="200dp"
                 android:layout_marginStart="24dp"
                 android:layout_marginTop="34dp"
+                android:layout_marginEnd="16dp"
                 android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/film_photo"
                 app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
 
@@ -103,7 +105,7 @@
                         android:fontFamily="@font/montserratlight"
                         android:text="17+"
                         android:textColor="@color/white"
-                        android:textSize="13sp" />
+                        android:textSize="12sp" />
 
 
                 </LinearLayout>
@@ -129,7 +131,7 @@
                         android:fontFamily="@font/montserratlight"
                         android:text="Todd Philips"
                         android:textColor="@color/white"
-                        android:textSize="13sp" />
+                        android:textSize="12sp" />
 
                 </LinearLayout>
 
@@ -149,13 +151,13 @@
 
                     <TextView
                         android:id="@+id/cast_film"
-                        android:layout_width="150dp"
+                        android:layout_width="120dp"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/montserratlight"
                         android:lineSpacingExtra="2dp"
                         android:text="Joaquin Phoenix, Robert de Niro,\n Zazie Beetz"
                         android:textColor="@color/white"
-                        android:textSize="13sp" />
+                        android:textSize="12sp" />
 
                 </LinearLayout>
 
@@ -177,10 +179,11 @@
 
             <TextView
                 android:id="@+id/sinopsis_film"
-                android:layout_width="350dp"
+                android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
                 android:fontFamily="@font/montserratlight"
                 android:lineSpacingExtra="5dp"
                 android:text="Forever alone in a crowd, failed comedian Arthur Fleck seeks connection as he walks
@@ -193,7 +196,7 @@ around him. Isolated, bullied and disregarded
 madness as he transforms into the criminal\n
 mastermind known as the Joker."
                 android:textColor="@color/white"
-                android:textSize="13sp"
+                android:textSize="12sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
@@ -201,15 +204,19 @@ mastermind known as the Joker."
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btn_buy_fix"
-                android:layout_width="380dp"
+                android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:layout_marginStart="12dp"
-                android:layout_marginTop="90dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="32dp"
                 android:background="@drawable/bg_btn_primary"
                 android:fontFamily="@font/mregular"
                 android:text="Buy IT"
                 android:textColor="@color/white"
                 android:textSize="11sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/sinopsis_film" />
 

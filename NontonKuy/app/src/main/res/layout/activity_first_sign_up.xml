@@ -51,13 +51,13 @@
             <EditText
                 android:id="@+id/tv_username"
                 android:layout_width="230dp"
-                android:layout_height="41dp"
+                android:layout_height="35dp"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/bg_editview"
                 android:fontFamily="@font/mmedium"
-                android:paddingLeft="4dp"
-
-                android:lines="1" />
+                android:lines="1"
+                android:paddingLeft="8dp"
+                />
         </LinearLayout>
 
         <LinearLayout
@@ -83,7 +83,7 @@
                 android:layout_marginTop="8dp"
                 android:background="@drawable/bg_editview"
 
-                android:paddingLeft="4dp"
+                android:paddingLeft="8dp"
                 android:fontFamily="@font/mmedium"
                 android:lines="1" />
         </LinearLayout>
@@ -112,7 +112,7 @@
                 android:background="@drawable/bg_editview"
                 android:inputType="textPassword"
                 android:fontFamily="@font/mmedium"
-                android:paddingLeft="4dp"
+                android:paddingLeft="8dp"
 
                 android:lines="1" />
         </LinearLayout>
